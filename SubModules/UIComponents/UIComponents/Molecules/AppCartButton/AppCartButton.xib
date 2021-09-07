@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppCartButton">
+            <connections>
+                <outlet property="badgeLabel" destination="zq3-LN-ztg" id="Yik-Rk-9mf"/>
+                <outlet property="badgeView" destination="yPP-yy-Yc8" id="qEk-xp-STd"/>
+                <outlet property="containerView" destination="ppI-1S-AlU" id="XcY-xK-fso"/>
+                <outlet property="iconImageView" destination="5qL-r1-LPC" id="BdF-sG-tWn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QZz-eT-K8F">
+            <rect key="frame" x="0.0" y="0.0" width="112" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KdH-Ht-Rz2">
+                    <rect key="frame" x="0.0" y="0.0" width="112" height="109"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppI-1S-AlU">
+                            <rect key="frame" x="10" y="10" width="92" height="89"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5qL-r1-LPC" customClass="AppImageView" customModule="UIComponents" customModuleProvider="target">
+                                    <rect key="frame" x="36" y="36" width="20" height="18.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="0zG-jA-U1K"/>
+                                        <constraint firstAttribute="height" constant="20" id="ka5-Or-vkp"/>
+                                    </constraints>
+                                    <imageReference key="image" image="cart" catalog="system" renderingMode="original"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="5qL-r1-LPC" firstAttribute="centerX" secondItem="ppI-1S-AlU" secondAttribute="centerX" id="CBr-rx-bgM"/>
+                                <constraint firstItem="5qL-r1-LPC" firstAttribute="centerY" secondItem="ppI-1S-AlU" secondAttribute="centerY" id="uK2-fb-bHO"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPP-yy-Yc8">
+                            <rect key="frame" x="87" y="5" width="20" height="20"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zq3-LN-ztg" customClass="AppLabel" customModule="UIComponents" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="Green"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="5Kx-Ck-h59"/>
+                                <constraint firstAttribute="bottom" secondItem="zq3-LN-ztg" secondAttribute="bottom" id="DCb-9T-Leh"/>
+                                <constraint firstItem="zq3-LN-ztg" firstAttribute="top" secondItem="yPP-yy-Yc8" secondAttribute="top" id="NOw-6H-RqQ"/>
+                                <constraint firstAttribute="height" constant="20" id="OcP-4s-ZQ7"/>
+                                <constraint firstAttribute="trailing" secondItem="zq3-LN-ztg" secondAttribute="trailing" id="Rfz-cF-rnS"/>
+                                <constraint firstItem="zq3-LN-ztg" firstAttribute="leading" secondItem="yPP-yy-Yc8" secondAttribute="leading" id="knf-Kk-Pyy"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ppI-1S-AlU" firstAttribute="leading" secondItem="KdH-Ht-Rz2" secondAttribute="leading" constant="10" id="2SF-hh-LBa"/>
+                        <constraint firstItem="yPP-yy-Yc8" firstAttribute="top" secondItem="ppI-1S-AlU" secondAttribute="top" constant="-5" id="7Z1-8B-WFi"/>
+                        <constraint firstItem="yPP-yy-Yc8" firstAttribute="trailing" secondItem="ppI-1S-AlU" secondAttribute="trailing" constant="5" id="GBj-ya-K9m"/>
+                        <constraint firstAttribute="bottom" secondItem="ppI-1S-AlU" secondAttribute="bottom" constant="10" id="glO-Qa-C3B"/>
+                        <constraint firstItem="ppI-1S-AlU" firstAttribute="top" secondItem="KdH-Ht-Rz2" secondAttribute="top" constant="10" id="kcH-aY-Tpu"/>
+                        <constraint firstAttribute="trailing" secondItem="ppI-1S-AlU" secondAttribute="trailing" constant="10" id="uEg-1d-7lZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="loW-c8-FfJ"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="loW-c8-FfJ" firstAttribute="bottom" secondItem="KdH-Ht-Rz2" secondAttribute="bottom" id="0V5-WA-axS"/>
+                <constraint firstItem="loW-c8-FfJ" firstAttribute="trailing" secondItem="KdH-Ht-Rz2" secondAttribute="trailing" id="XAm-6x-7BD"/>
+                <constraint firstItem="KdH-Ht-Rz2" firstAttribute="top" secondItem="loW-c8-FfJ" secondAttribute="top" id="b7d-SX-4iA"/>
+                <constraint firstItem="KdH-Ht-Rz2" firstAttribute="leading" secondItem="QZz-eT-K8F" secondAttribute="leading" id="gVe-Qn-tPa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="48.75" y="172.71126760563379"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <namedColor name="Green">
+            <color red="0.34509803921568627" green="0.70980392156862748" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

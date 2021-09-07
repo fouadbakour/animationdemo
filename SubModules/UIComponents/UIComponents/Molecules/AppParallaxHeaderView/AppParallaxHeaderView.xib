@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppParallaxHeaderView">
+            <connections>
+                <outlet property="appSegment" destination="zXj-SC-W41" id="Lb9-aP-mAx"/>
+                <outlet property="appSegmentContainer" destination="PYI-Tb-esT" id="pUd-iT-Wfm"/>
+                <outlet property="containerHightConstraint" destination="55R-mV-IO7" id="PSi-cd-9ow"/>
+                <outlet property="containerView" destination="RSv-06-127" id="7po-O1-0az"/>
+                <outlet property="segmentHeightConstraint" destination="Jch-Vf-Ivq" id="dkh-e6-TfV"/>
+                <outlet property="slideShowBottomConstraint" destination="1QW-6D-orJ" id="NRR-GJ-Wll"/>
+                <outlet property="slideShowHeightConstraint" destination="m08-bO-Pr5" id="4eT-Q7-zzr"/>
+                <outlet property="slideShowView" destination="3TJ-yi-jC0" id="Wdz-8F-rqV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QZz-eT-K8F">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="440"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RSv-06-127">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="440"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3TJ-yi-jC0" customClass="AppSlideShow" customModule="UIComponents" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="440"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYI-Tb-esT">
+                            <rect key="frame" x="0.0" y="343" width="400" height="97"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXj-SC-W41" customClass="AppSegment" customModule="UIComponents" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="27" width="400" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="apT-OE-26e"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="97" id="Jch-Vf-Ivq"/>
+                                <constraint firstAttribute="bottom" secondItem="zXj-SC-W41" secondAttribute="bottom" constant="20" id="cYw-2S-cMo"/>
+                                <constraint firstItem="zXj-SC-W41" firstAttribute="leading" secondItem="PYI-Tb-esT" secondAttribute="leading" id="wTq-JS-UFG"/>
+                                <constraint firstAttribute="trailing" secondItem="zXj-SC-W41" secondAttribute="trailing" id="yan-eR-Gzx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3TJ-yi-jC0" firstAttribute="bottom" secondItem="RSv-06-127" secondAttribute="bottom" id="1QW-6D-orJ"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="55R-mV-IO7"/>
+                        <constraint firstItem="PYI-Tb-esT" firstAttribute="leading" secondItem="RSv-06-127" secondAttribute="leading" id="CnI-vv-mZJ"/>
+                        <constraint firstItem="3TJ-yi-jC0" firstAttribute="centerX" secondItem="RSv-06-127" secondAttribute="centerX" id="Kl7-Rb-4xj"/>
+                        <constraint firstAttribute="bottom" secondItem="PYI-Tb-esT" secondAttribute="bottom" id="eyo-pd-2de"/>
+                        <constraint firstAttribute="trailing" secondItem="PYI-Tb-esT" secondAttribute="trailing" id="gyW-WR-Lpd"/>
+                        <constraint firstItem="3TJ-yi-jC0" firstAttribute="height" secondItem="RSv-06-127" secondAttribute="height" id="m08-bO-Pr5"/>
+                        <constraint firstItem="3TJ-yi-jC0" firstAttribute="leading" secondItem="RSv-06-127" secondAttribute="leading" id="xN7-bb-0jA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="RSv-06-127" firstAttribute="top" secondItem="QZz-eT-K8F" secondAttribute="top" id="7oY-Nh-SD5"/>
+                <constraint firstItem="RSv-06-127" firstAttribute="centerY" secondItem="QZz-eT-K8F" secondAttribute="centerY" id="W7O-jJ-csN"/>
+                <constraint firstItem="RSv-06-127" firstAttribute="leading" secondItem="QZz-eT-K8F" secondAttribute="leading" id="bMC-ka-D3z"/>
+                <constraint firstItem="RSv-06-127" firstAttribute="centerX" secondItem="QZz-eT-K8F" secondAttribute="centerX" id="wPH-e0-f4P"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="275.625" y="115.14084507042254"/>
+        </view>
+    </objects>
+</document>

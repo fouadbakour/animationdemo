@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="SegmentTableViewCell" customModule="AnimationDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5P-1O-7gQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQx-Kb-FWR" customClass="AppSegment" customModule="UIComponents">
+                                <rect key="frame" x="0.0" y="47" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="C54-ye-hrS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="97" id="023-5x-Ekz"/>
+                            <constraint firstAttribute="bottom" secondItem="vQx-Kb-FWR" secondAttribute="bottom" id="DKj-We-ExL"/>
+                            <constraint firstAttribute="trailing" secondItem="vQx-Kb-FWR" secondAttribute="trailing" id="EAK-oO-ET2"/>
+                            <constraint firstItem="vQx-Kb-FWR" firstAttribute="leading" secondItem="y5P-1O-7gQ" secondAttribute="leading" id="LRA-jZ-Bb1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="y5P-1O-7gQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3Rb-9z-Q6O"/>
+                    <constraint firstItem="y5P-1O-7gQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Gwi-d5-tuW"/>
+                    <constraint firstAttribute="bottom" secondItem="y5P-1O-7gQ" secondAttribute="bottom" id="K92-4K-yqO"/>
+                    <constraint firstAttribute="trailing" secondItem="y5P-1O-7gQ" secondAttribute="trailing" id="RdM-p8-kdg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="appSegment" destination="vQx-Kb-FWR" id="dqI-m2-mJe"/>
+                <outlet property="containerView" destination="y5P-1O-7gQ" id="UNG-B7-HDQ"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="130.24553571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

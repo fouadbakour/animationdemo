@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="YbR-N4-d7O">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="d7X-Xm-nEX" customClass="HomeViewController" customModule="AnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uJx-Eb-Whq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xjY-6O-oRK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UlI-Gk-gnn" customClass="AppCartButton" customModule="UIComponents">
+                                <rect key="frame" x="324" y="772" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Hrb-qK-itn"/>
+                                    <constraint firstAttribute="height" constant="70" id="t7O-fW-9IB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w1M-IU-r8e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xjY-6O-oRK" firstAttribute="top" secondItem="uJx-Eb-Whq" secondAttribute="top" id="4cJ-yS-YwT"/>
+                            <constraint firstItem="xjY-6O-oRK" firstAttribute="width" secondItem="uJx-Eb-Whq" secondAttribute="width" id="6CU-9x-Qfi"/>
+                            <constraint firstItem="w1M-IU-r8e" firstAttribute="trailing" secondItem="UlI-Gk-gnn" secondAttribute="trailing" constant="20" id="8UI-hs-xv5"/>
+                            <constraint firstItem="w1M-IU-r8e" firstAttribute="bottom" secondItem="UlI-Gk-gnn" secondAttribute="bottom" constant="20" id="PGK-ML-7Zm"/>
+                            <constraint firstItem="xjY-6O-oRK" firstAttribute="centerX" secondItem="w1M-IU-r8e" secondAttribute="centerX" id="Yn1-L2-qvN"/>
+                            <constraint firstItem="w1M-IU-r8e" firstAttribute="bottom" secondItem="xjY-6O-oRK" secondAttribute="bottom" id="hKR-Ei-QcI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cartButton" destination="UlI-Gk-gnn" id="dYc-OY-8b4"/>
+                        <outlet property="tableView" destination="xjY-6O-oRK" id="7kv-n6-oTZ"/>
+                        <outlet property="tableViewCenterX" destination="Yn1-L2-qvN" id="mCt-zT-qb2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LKV-vx-mOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811" y="-384"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
