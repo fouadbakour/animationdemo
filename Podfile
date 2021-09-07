@@ -5,7 +5,6 @@ inhibit_all_warnings!
 def main_pods
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'RxDataSources'
   pod 'Moya'
 end
 
