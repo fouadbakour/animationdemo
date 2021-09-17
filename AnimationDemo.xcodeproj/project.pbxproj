@@ -229,7 +229,6 @@
 				3EEB7E9926E784760023C653 /* Interactor */,
 				3EEB7E9826E7846C0023C653 /* Presenter */,
 				3EEB7E9726E784540023C653 /* View */,
-				3E7950E726E5562F004E52F1 /* TableViewCells */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -246,6 +245,7 @@
 		3EEB7E9726E784540023C653 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3E7950E726E5562F004E52F1 /* TableViewCells */,
 				3EA5E70E26E2E1430093DC42 /* Home.storyboard */,
 				3EA5E71326E2E1430093DC42 /* HomeViewController.swift */,
 				3EEB7E9526E76F030023C653 /* HomeViewController+Animations.swift */,
