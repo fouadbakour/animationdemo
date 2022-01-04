@@ -55,8 +55,11 @@ public class AppSegment: UIView {
     private(set) var selectedId: String = "" {
         didSet {
             let index = items.firstIndex(where: { $0.id == selectedId }) ?? 0
-            collectionView.scrollToItem(at: IndexPath(item: index, section: 0), at: .right, animated: true)
             collectionView.reloadData()
+            delay(0.1) { [weak self] in
+                guard let self = self else { return }
+                self.collectionView.scrollToItem(at: IndexPath(item: index, section: 0), at: .right, animated: true)
+            }
         }
     }
     
